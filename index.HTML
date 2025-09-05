@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>testing book sales</title>
+<style>
+:root {
+--bg: #f7f7f9;
+--fg: #111827;
+--accent: #1f6feb;
+--accent-hover: #1a56c4;
+--shadow: rgba(0, 0, 0, 0.08);
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+margin: 0;
+font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+background: var(--bg);
+color: var(--fg);
+line-height: 1.5;
+}
+header {
+position: sticky;
+top: 0;
+background: white;
+border-bottom: 1px solid #e5e7eb;
+box-shadow: 0 2px 8px var(--shadow);
+padding: 18px 24px;
+text-align: center;
+font-weight: 700;
+font-size: clamp(18px, 2.8vw, 28px);
+letter-spacing: 0.2px;
+}
+main { padding: 48px 24px 96px; max-width: 900px; margin: 0 auto; }
+.side-cta {
+position: fixed;
+right: 20px;
+top: 50%;
+transform: translateY(-50%);
+z-index: 1000;
+}
+.cta-btn {
+display: inline-block;
+padding: 14px 18px;
+border-radius: 999px;
+background: var(--accent);
+color: white;
+text-decoration: none;
+font-weight: 700;
+box-shadow: 0 8px 20px var(--shadow);
+border: 0;
+transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+white-space: nowrap;
+}
+.cta-btn:hover, .cta-btn:focus {
+background: var(--accent-hover);
+transform: translateY(-1px);
+box-shadow: 0 10px 22px var(--shadow);
+}
+.cta-btn:active { transform: translateY(0); }
+/* Make the button less obtrusive on very small screens */
+@media (max-width: 640px) {
+.side-cta {
+right: 12px;
+}
+.cta-btn {
+padding: 12px 14px;
+font-size: 14px;
+}
+}
+</style>
+</head>
+<body>
+<header>testing book sales</header>
+
+<main>
+<!-- Optional content area; keep empty/minimal per requirements -->
+<p style="opacity:.0">&nbsp;</p>
+</main>
+
+<div class="side-cta">
+<a
+class="cta-btn"
+href="https://www.amazon.com/Click-Here-Science-Marketing-Advertising/dp/0316597597"
+aria-label="Pre-Order the Book Here"
+rel="nofollow sponsored noopener"
+target="_blank"
+>
+Pre-Order the Book Here
+</a>
+</div>
+</body>
+</html>
